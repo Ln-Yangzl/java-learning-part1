@@ -32,8 +32,11 @@ public class JumpGame {
         JumpGame instant = new JumpGame();
 
         int[] nums = new int[arr.size()];
-        nums = arr.toArray(new int[arr.size()]);
+        for(int i=0;i<arr.size();i++){
+            nums[i] = arr.get(i);
+        }
         int res = instant.jump(nums);
+        System.out.println(res);
         sc.close();
     }
 }
